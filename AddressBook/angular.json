@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AddressBook": {
+    "addressbook": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/address-book",
+            "outputPath": "dist/addressbook",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AddressBook:build:production"
+              "buildTarget": "addressbook:build:production"
             },
             "development": {
-              "buildTarget": "AddressBook:build:development"
+              "buildTarget": "addressbook:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "026c510b-6eab-42b9-9a78-014b112c1faa"
+    "analytics": "5a4cf1c8-da9a-4987-84a7-47fdeba04e41"
   }
 }

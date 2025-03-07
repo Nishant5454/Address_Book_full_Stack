@@ -1,21 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { PersondetailsComponent } from './components/persondetails/persondetails.component';
+import { AddressbookformComponent } from './components/addressbookform/addressbookform.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterModule],
-  standalone : true,
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  imports: [DashboardComponent,PersondetailsComponent],
+  template : `
+  <app-dashboard></app-dashboard>
+  <app-persondetails></app-persondetails>
+  `,
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'AddressBook';
-  @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
-  })
-    goToAbout() {
-      // Logic to navigate to the About page
-    }
+  title = 'addressbook';
 }
