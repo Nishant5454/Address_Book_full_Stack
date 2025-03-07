@@ -1,21 +1,21 @@
-
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/dashboard/header.component';
-import{CRUDComponent} from './components/crud/crud.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent,CRUDComponent],
-  styleUrls: ['./app.component.scss'],
-  template: `
-    <app-header></app-header>
-    <app-crud></app-crud>
-
-    <router-outlet></router-outlet>
-  `,
+  imports: [RouterModule],
+  standalone : true,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'AddressBook';
+  @Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
+  })
+    goToAbout() {
+      // Logic to navigate to the About page
+    }
 }
