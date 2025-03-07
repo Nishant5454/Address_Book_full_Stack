@@ -1,0 +1,16 @@
+header
+{
+  font-size: 40px;
+  display: flex;
+  padding-inline:16px ;
+  padding-block: 8px;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+header,nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
